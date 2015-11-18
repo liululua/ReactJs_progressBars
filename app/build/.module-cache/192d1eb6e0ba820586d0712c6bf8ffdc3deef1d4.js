@@ -1,4 +1,4 @@
-var Main = React.createClass({
+var Main = React.createClass({displayName: "Main",
 
   // Initialize State of component
     
@@ -51,43 +51,43 @@ var Main = React.createClass({
 
     	return (
 
-          <div className="container">
+          React.createElement("div", {className: "container"}, 
 
-	      <h1 className="text-center"> Progress Bar Demo </h1>
-           <br/>
-         <ProgressBarGroup options={this.state.progressBars} />
-           <br/>
-       <div className="row">
-      <div className="col-sm-3">
-       <select ref="progressBarsSelection" onChange={this.handleChange}  >
+	      React.createElement("h1", {className: "text-center"}, " Progress Bar Demo "), 
+           React.createElement("br", null), 
+         React.createElement(ProgressBarGroup, {options: this.state.progressBars}), 
+           React.createElement("br", null), 
+       React.createElement("div", {className: "row"}, 
+      React.createElement("div", {className: "col-sm-3"}, 
+       React.createElement("select", {ref: "progressBarsSelection", onChange: this.handleChange}, 
 
-                  { this.state.progressBars.map(function(progressBar)
+                   this.state.progressBars.map(function(progressBar)
                      
                      {
-                        return <option value={progressBar.id} >{progressBar.id} </option>
+                        return React.createElement("option", {value: progressBar.id}, progressBar.id, " ")
                      }
-                  )}
+                  )
                   
-      </select>
-      </div>
+      )
+      ), 
       
-      <div className="col-sm-9">
-      <button  className="btn btn-default pull-right" onClick={this.handleClick}  value="25">
-        25
-      </button>
-       <button className="btn btn-default pull-right" onClick={this.handleClick}  value="10">
-        10
-      </button>
-       <button className="btn btn-default pull-right" onClick={this.handleClick}  value="-10">
-        -10
-      </button> 
-      <button className="btn btn-default pull-right" onClick={this.handleClick}  value="-25">
-         -25
-      </button>
-      </div>
-      </div>
+      React.createElement("div", {className: "col-sm-9"}, 
+      React.createElement("button", {className: "btn btn-default pull-right", onClick: this.handleClick, value: "25"}, 
+        "25"
+      ), 
+       React.createElement("button", {className: "btn btn-default pull-right", onClick: this.handleClick, value: "10"}, 
+        "10"
+      ), 
+       React.createElement("button", {className: "btn btn-default pull-right", onClick: this.handleClick, value: "-10"}, 
+        "-10"
+      ), 
+      React.createElement("button", {className: "btn btn-default pull-right", onClick: this.handleClick, value: "-25"}, 
+         "-25"
+      )
+      )
+      )
        
-          </div>
+          )
           
         );    	
     }
