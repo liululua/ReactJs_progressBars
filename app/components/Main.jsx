@@ -7,8 +7,8 @@ var Main = React.createClass({
         return {
         	
             // Intialize the state of component 
-        
-            
+            // Static data for number of progress bars and their initial values
+             
             progressBars: [ 
                             {value:'10', label: 'ProgressBar1',id:'progressBar1'},
                             {value:'10', label: 'ProgressBar2',id:'progressBar2'},
