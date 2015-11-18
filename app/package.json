@@ -1,0 +1,25 @@
+{
+  "name": "reactjs_progressbars",
+  "version": "1.0.0",
+  "description": "Dynamically change progress bars using reactJs",
+  "main": "index.html",
+  "scripts": {
+    "test": "no tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmetla/ReactJs_progressBars.git"
+  },
+  "keywords": [
+    "progress",
+    "bars",
+    "using",
+    "ReactJs"
+  ],
+  "author": "Lokesh Metla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmetla/ReactJs_progressBars/issues"
+  },
+  "homepage": "https://github.com/lmetla/ReactJs_progressBars#readme"
+}

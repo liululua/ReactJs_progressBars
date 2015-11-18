@@ -1,0 +1,13 @@
+$ff:'arial';
+$bg:#2f2f2f;
+$title: #ffffff;
+body
+{
+	background: $bg;
+	font-family: $ff;
+}
+
+h1
+{
+	color:$title;
+}
